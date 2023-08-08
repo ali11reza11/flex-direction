@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+     background: #ddd;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+.container>div{
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.container>div:nth-child(odd){
+    background-color: rgba(63, 81, 181, 0.6);
+}
+
+.container>div:nth-child(even){
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    background-color: rgba(103, 58, 183, 0.6);
+}
+
+span{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+
+    font-size: 2rem;
+    border: none;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+    
+}
+
+.container.active{
+    transition: all .3s linear 0s;
+    flex-direction: column;
+
+
+}
